@@ -5,8 +5,8 @@
 # hubot boobes N - get N pairs of boobs
 
 module.exports = (robot) ->
-  robot.hear /boobs|tett|seno!t*ette|t*tte/i, (msg) ->
-    if Math.floor(Math.random() * 10) == 1
+  robot.hear /boobs|tett|seno|t*ette|t*tte/i, (msg) ->
+    if Math.floor(Math.random() * 5) == 1
       number = Math.floor(Math.random() * 3000)
       msg.http("http://api.oboobs.ru/boobs/" + number + "/1/rank/")
       .get() (err, res, body) ->
