@@ -11,6 +11,9 @@ typedCmd =
       /outofcontext|ooc (?!rm )(.*?): (.*)/i
       /outofcontext|ooc rm (.*?): (.*)/i
     ]
+    "big black c": [
+      /bbc/i
+    ]
     "archer": [
       /archer/i
     ]
@@ -111,12 +114,12 @@ typedCmd =
       /twitter (\S+)\s*(.+)?/i
     ]
     "where": [
-      /time( at)? ?(.+)?/i
-      /((?:(?!is).)*) is (in|at) (.*)/i
-      /I\'*\’*m (in|at) (.*)/i
-      /I am (in|at) (.*)/i
-      /where is (.+)/i
-      /where am I/i
+#      /time( at)? ?(.+)?/i
+#      /((?:(?!is).)*) is (in|at) (.*)/i
+#      /I\'*\’*m (in|at) (.*)/i
+#      /I am (in|at) (.*)/i
+#      /where is (.+)/i
+#      /where am I/i
       /weather( at)? ?(.+)?/i
     ],
     "remind": [
@@ -134,11 +137,11 @@ typedCmd =
       /_\.(\w+)(.*)$/i
     ],
     "alias": [
-      /I am(?! in| at) (.*)/i
-      /I\'*\’*m(?! in| at) (.*)/i
-      /My name is(?! in| at) (.*)/i
-      /who is (.*)/i
-      /who am I/i
+#      /I am(?! in| at) (.*)/i
+ #     /I\'*\’*m(?! in| at) (.*)/i
+  #    /My name is(?! in| at) (.*)/i
+  #    /who is (.*)/i
+  #    /who am I/i
       /clear alias for (.*)/i
     ],
     "sentiment": [
