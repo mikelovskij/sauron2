@@ -37,7 +37,7 @@ module.exports = (robot) ->
       .get() (err, res, body) ->
         response = JSON.parse(body)
         msg.send "http://media.oboobs.ru/" + el.preview for el in response
-    else if Math.floor(Math.random()*30) == 1
+    else if Math.floor(Math.random() * 20) == 1
       bigBlack(msg)
     
     
