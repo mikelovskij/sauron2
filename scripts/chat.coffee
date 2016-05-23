@@ -63,7 +63,7 @@ module.exports = (robot) ->
 		txt = msg.match[1]
 		isCmd = catchCmd txt
 		isJ = catchJ txt
-		if !_.size isCmd 
+# 		if !_.size isCmd 
 			if _.size isJ then jtalk dict[isJ], msg, robot else mtalk txt, msg, robot
 
 	# greeting for when new member enters the room
