@@ -13,20 +13,20 @@ bigBlack = (msg) ->
   .query(api_key: api_key, limit: count)
   .get() (err, res, body) ->
     if err
-      msg.send "Tumblr says: #{err}"
+      msg.reply "Tumblr says: #{err}"
       return
 
     content = JSON.parse(body)
 
     if content.meta.status isnt 200
-      msg.send "Tumblr says: #{content.meta.msg}"
+      msg.reply "Tumblr says: #{content.meta.msg}"
       return
 
     posts = content.response.posts
     numb = Math.floor(Math.random()*count)
     post = posts[numb]
     for photo in post.photos
-      msg.send photo.original_size.url
+      msg.reply photo.original_size.url
 
 module.exports = (robot) ->
 
